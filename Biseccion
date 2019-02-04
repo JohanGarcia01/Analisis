@@ -11,6 +11,7 @@ b =as.double(readline(prompt = "Segundo numero"))
 m=(a-b)/2
 y1 = fun(a)
 y2 = fun(b)
+curve(fun,from = a, to=b)
 i=0
 aux=1
 options(digits = 6)
