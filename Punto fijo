@@ -2,10 +2,13 @@
 #Analisis numerico
 #Metodo del punto fijo
 #Johan Ferney Garcia Pachon
+#tol=nivel de tolerancia
+#N=numero de iteraciones permitidas
 
 
-x0=2;  tol=0.00000001; N=15
-f=function(x) acos(x-2)-1+x
+x0=2;  tol=0.00000001 ; N=15
+#Declaracion de funciones
+f=function(x) acos(x-2)-1+x 
 g=function(x) acos(x-2)-1+ x
 curve(g,from = -2, to=2)
 curve (1*x, from =-2, 2, add=TRUE)
