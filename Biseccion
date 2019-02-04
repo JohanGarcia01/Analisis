@@ -1,0 +1,32 @@
+#Pontifica Universidad Javeriana
+#Analisis numerico
+#Metodo de biseccion
+#Johan Ferney Garcia Pachon
+
+fun <- function(x){
+  return (x*x*x -4*x -9)
+}
+a =as.double(readline(prompt = "Primer numero"))
+b =as.double(readline(prompt = "Segundo numero"))
+m=(a-b)/2
+y1 = fun(a)
+y2 = fun(b)
+i=0
+aux=1
+options(digits = 6)
+while(abs((a-b)/2)>0.0000001){
+  i<-i+1
+  y1= fun(a)
+  y2= fun(b)
+  y3= fun(m)
+  print(m)
+  aux=aux+1
+  if((y1*y3) < 0){
+    b=m
+  }
+  else{
+    a=m
+  }
+  m = (a+b)/2
+}
+cat("iterciones",aux ,".Raiz=",m)
