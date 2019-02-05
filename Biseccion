@@ -30,4 +30,9 @@ while(abs((a-b)/2)>0.0000001){
   }
   m = (a+b)/2
 }
-cat("iterciones",aux ,".Raiz=",m)
+cat ("iterciones", aux, ". Raiz =", m)
+ En   En el procesamiento de Imágenes Médicas. 
+ El problema de registro en imágenes, un problema relevante de procesamiento 
+de imágenes medicas, consiste en encontrar la transformación geométrica que 
+ponga dos imágenes dadas en la mejor correspondencia posible, hallando las raices se pueden
+Separar el ruido de la imagen original a analizar
