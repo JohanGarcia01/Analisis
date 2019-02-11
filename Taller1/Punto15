@@ -21,7 +21,6 @@ g<-function(x){
   
   return((6*x)-exp(x)-1)
 }
-#Esta funcion fue tomada del libro
 pfijo<-function(f,E,xo,maxi)
 {
  d<-1
