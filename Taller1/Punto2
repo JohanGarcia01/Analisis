@@ -1,6 +1,6 @@
 #Pontifica Universidad Javeriana
 #Analisis numerico
-#JOhan Ferney Garcia Pachon
+#Johan Ferney Garcia Pachon
 
 
 a =as.double(readline(prompt = "Ingrese un numero "))
