@@ -1,1 +1,14 @@
+#Pontifica Universidad Javeriana
+#Analisis numerico
+#JOhan Ferney Garcia Pachon
 
+
+a =as.double(readline(prompt = "Ingrese un numero "))
+while(a>0){
+  d<-a%%2
+  a<-a/2
+  print(d)
+}
+
+b)es muy similiar a una búsqueda binaria que tiene una complejidad de orden logarítmico (O(log n))
+ya que en cada iteracion la variable a se vera reducida en la mitad
