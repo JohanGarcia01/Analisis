@@ -1,0 +1,27 @@
+f<-function(x)
+{
+  return(tan(pi*x)-cos(pi*x))
+}
+
+puntodos<-function(f,xo,x1)
+{
+  error=10**-4
+  xna<-x1
+  xn<-xo
+  xi<-0
+  cont=1
+  repeat
+  {
+    xi<-xn
+    frac<-(xn-xna)/(f(xn)-f(xna))
+    xn<-xn-(f(xn)*frac)
+    xna<-xi
+    d<-abs(xn-xna)
+    if(d<error)
+      break
+  }
+  cat("El punto de interseccion es: (",toString(format(log(xn+2),nsmall = 7)),")\n")
+}
+
+#Defino como intervalo 0 a 0.8
+puntodos(f,0,0.5)
