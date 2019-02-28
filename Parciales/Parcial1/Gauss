@@ -49,9 +49,9 @@ void EscribeDatos(int Dim, float Sist[][102])
 
 void ResuelveGauss(int Dim, float Sist[][102])
 {
-    int multiplicaciones=0;
     int NoCero,Col,C1,C2,A;
     float Pivote,V1;
+    int multiplicaciones=0;
     
     for(Col=1;Col<=Dim;Col++){
         NoCero=0;A=Col;
@@ -77,5 +77,5 @@ void ResuelveGauss(int Dim, float Sist[][102])
         multiplicaciones++;
         Sist[C1][Col]=0;
     }
+    printf("%7.multiplicaciones",multiplicaciones);
 }
-
