@@ -23,5 +23,5 @@ puntodos<-function(f,xo,x1)
   cat("El punto de interseccion es: (",toString(format(log(xn+2),nsmall = 7)),")\n")
 }
 
-#Defino como intervalo 0 a 0.8
+#Defino como intervalo 0 a 0.5
 puntodos(f,0,0.5)
